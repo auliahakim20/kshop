@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 07, 2021 at 04:07 AM
+-- Generation Time: Jul 08, 2021 at 03:43 AM
 -- Server version: 10.4.18-MariaDB
 -- PHP Version: 7.4.16
 
@@ -107,8 +107,10 @@ INSERT INTO `users` (`id`, `name`, `email`, `email_verified_at`, `password`, `re
 (8, 'Sano Manjirou', 'mikey@gmail.com', NULL, '$2y$10$Y1LWaE8627cW18LPgvOdQOP9T2ZyxaM8v4gAtVnVrPrM8mF8QLN2K', NULL, '2021-07-06 03:24:39', '2021-07-06 18:36:23', 'mikey', '[\"ADMIN\"]', 'Kantou', '4', 'avatars/kDk2CiTYYglcF9v7ItPcfPvV5RCdidpVye7APq6n.png', 'ACTIVE'),
 (9, 'Chiyufu Matsuno', 'chifuyu@gmail.com', NULL, '$2y$10$pIgtUkTmLu6tw4N4Hvmf/OPiqMDl57lV7y42k13dlgTyFEezyu9tm', NULL, '2021-07-06 03:25:09', '2021-07-06 03:25:09', 'chifuyu', '[\"CUSTOMER\"]', 'Tokyo', '5', NULL, 'ACTIVE'),
 (10, 'Mitsuya Takashi', 'mitsuya@gmail.com', NULL, '$2y$10$8tmgtrY7JYUXw5NIsrQIX.wmGjNd5yiHf.QAK1ckPThxpzwL4.qGW', NULL, '2021-07-06 03:25:41', '2021-07-06 18:32:10', 'mitsuya', '[\"CUSTOMER\"]', 'Yokohama', '6', 'avatars/CGMNqallsHrx6JJCCIHwnOqph31zcbKo3rzHuEmq.jpg', 'ACTIVE'),
-(11, 'Baji', 'baji@gmail.com', NULL, '$2y$10$ssBLh33KCaS9omfrWIlMyOIjyGPVJizPHp/UFppBMCjQyPhWhxFyK', NULL, '2021-07-06 03:26:54', '2021-07-06 03:26:54', 'baji', '[\"STAFF\",\"CUSTOMER\"]', 'Tokyo', '7', NULL, 'ACTIVE'),
-(12, 'Kazutora', 'kazutora', NULL, '$2y$10$mJSP5/KLUzRCxzAyeA0WWeRlgCSfLxoJPEIuRwFYBN1QRvVPChao2', NULL, '2021-07-06 03:27:26', '2021-07-06 03:27:26', 'kazutora', '[\"STAFF\"]', 'Kyoto', '8', NULL, 'ACTIVE');
+(11, 'Baji', 'baji@gmail.com', NULL, '$2y$10$ssBLh33KCaS9omfrWIlMyOIjyGPVJizPHp/UFppBMCjQyPhWhxFyK', NULL, '2021-07-06 03:26:54', '2021-07-07 06:28:42', 'baji', '[\"ADMIN\",\"STAFF\",\"CUSTOMER\"]', 'Tokyo', '7', NULL, 'INACTIVE'),
+(12, 'Kazutora', 'kazutora', NULL, '$2y$10$mJSP5/KLUzRCxzAyeA0WWeRlgCSfLxoJPEIuRwFYBN1QRvVPChao2', NULL, '2021-07-06 03:27:26', '2021-07-07 06:28:27', 'kazutora', '[\"ADMIN\",\"STAFF\"]', 'Kyoto', '8', NULL, 'INACTIVE'),
+(13, 'Akashi Takeyomi', 'akeyomi@gmail.com', NULL, '$2y$10$Q9yRiKBYMRsZRp33LFXn5OWHsqPbcL7VLIzwJ.ixYE4TuDQLN4nnW', NULL, '2021-07-07 18:23:09', '2021-07-07 18:23:09', 'takeyomi', '[\"CUSTOMER\"]', 'Tokyo', '40', NULL, 'ACTIVE'),
+(14, 'Hakkai Shiba', 'hakkai@gmail.com', NULL, '$2y$10$HY.ge8yYbfgPmt1Um4UXieG78tF50jymOlN0l/JDY9cp5/5B2GNMG', NULL, '2021-07-07 18:23:53', '2021-07-07 18:23:53', 'hakkai', '[\"ADMIN\",\"STAFF\"]', 'Shibuya', '12', NULL, 'ACTIVE');
 
 --
 -- Indexes for dumped tables
@@ -161,7 +163,7 @@ ALTER TABLE `migrations`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
